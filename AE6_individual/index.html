@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Galería de Imágenes</title>
+</head>
+<body>
+
+  <h1>Galería de Imágenes</h1>
+
+ <main class="galeria">
+  <div class="imagen">
+    <img src="img/bird-8253245_1280.jpg" alt="Imagen 1" data-index="0">
+  </div>
+  <div class="imagen">
+    <img src="img/deer-8096147_1280.png" alt="Imagen 2" data-index="1">
+  </div>
+  <div class="imagen">
+    <img src="img/gracioso-conejito-blanco-sobre-hierba-verde-primavera.jpg" alt="Imagen 3" data-index="2">
+  </div>
+  <div class="imagen">
+    <img src="img/guinea-pig-242520_1280.jpg" alt="Imagen 4" data-index="3">
+  </div>
+  <div class="imagen">
+    <img src="img/manatee-387193_1280.jpg" alt="Imagen 5" data-index="4">
+  </div>
+  <div class="imagen">
+    <img src="img/rabbits-6058025_1280.jpg" alt="Imagen 6" data-index="5">
+  </div>
+</main>
+
+
+    <div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-img" id="imagen-grande">
+    <button class="anterior">&#10094;</button>
+    <button class="siguiente">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
