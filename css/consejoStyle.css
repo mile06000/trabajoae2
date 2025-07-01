@@ -2,7 +2,7 @@
 .card {
   border: 2px solid #ad72ff;
   background-color: #ad72ff9a;
-  border-radius: 15px;
+  border-radius: 14px;
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
