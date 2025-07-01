@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar con Dropdowns</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/consejoStyle.css">
+
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">CS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=phishing">Phishing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=malware">Malware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=ransomware">Ransomware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=ddos">DDoS</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Consejos de seguridad
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu2">
+            <li><a class="dropdown-item" href="consejos.html#buenas-practicas">Buenas Prácticas</a></li>
+            <li><a class="dropdown-item" href="consejos.html#test">Test de seguridad</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="consejos.html#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Cards-->
+<div class="container my-5">
+  <div class="row g-4">
+    <h2 class="consejos text-center">Consejos de seguridad</h2>
+
+    <!-- Card 1 -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consejos generales</h5>
+         <ul>
+  <li>Contar con un antivirus</li>
+  <li>Tener contraseñas diferentes</li>
+  <li>Cierra sesión, especialmente en dispositivos que no sean propios</li>
+  <li>Evita conectarte a redes abiertas, y si te conentas a una, no expongas datos sensibles </li>
+  <li>Utiliza autenticación de dos pasos</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consejos para evitar el Phishing</h5>
+          <ul>
+            <li>Presta atención a remitentes sospechosos</li>
+            <li>No entrege datos sensibles, como contraseñas o datos bancarios</li>
+            <li>Revisa la gramática y ortografía del mail o la página</li>
+            <li>Comprueba la información con canales de información oficales de la entidad</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consejos para evitar un Malware</h5>
+          <ul>
+            <li>Mante actualizado el sistema operativo de tus dispositivos</li>
+            <li>Utiliza un antivirus</li>
+            <li>No abras correos, ni enlaces extraños</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consejos para evitar un Ransomware</h5>
+           <ul>
+            <li>No abras correos, ni enlaces extraños</li>
+            <li>No pague el rescate</li>
+            <li>Avise a las autoridades</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Consejos para evitar un ataque DDoS</h5>
+                    <ul>
+            <li>Implemente protección multicapa a su página</li>
+            <li>Utilice redes de distribución de contenido</li>
+            <li>Mantenga actualizado sus sitemas de seguridad</li>
+            <li>Implemente análisis y monitoreo de tráfico en su página</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+   <!-- Modal -->
+
+<div class="text-center my-4">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTest" id="test">
+    Realizar Test de Seguridad
+  </button>
+</div>
+
+<div class="modal fade" id="modalTest" tabindex="-1" aria-labelledby="modalTestLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="testForm">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTestLabel">Test de Seguridad</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="q1">1. ¿Qué es phishing?</label>
+            <select class="form-select" id="q1" required>
+              <option value="">Selecciona una opción</option>
+              <option value="correcta">Un intento de engaño para robar información</option>
+              <option value="incorrecta">Un tipo de antivirus</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="q2">2. ¿Es seguro usar la misma contraseña en todos los sitios?</label>
+            <select class="form-select" id="q2" required>
+              <option value="">Selecciona una opción</option>
+              <option value="incorrecta">Sí</option>
+              <option value="correcta">No</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="q3">3. ¿Cuál es una manera de protegerse?</label>
+            <select class="form-select" id="q3" required>
+              <option value="">Selecciona una opción</option>
+              <option value="incorrecta">Conectarse a redes abiertas</option>
+              <option value="correcta">Utilizar autenticación de dos pasos</option>
+              <option value="incorrecta">Compartir datos sensibles</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="q4">4. En caso de ser víctima de un ransomware, ¿lo correcto es pagar el rescate?</label>
+            <select class="form-select" id="q4" required>
+              <option value="">Selecciona una opción</option>
+              <option value="incorrecta">Verdadero</option>
+              <option value="correcta">Falso</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--Formulario-->
+<div class="container my-5" id="contacto">
+  <h2 class="text-center mb-4">Contáctanos para más información</h2>
+  <form id="contactoForm" novalidate>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="correo" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="correo" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards Interactivas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/amenazasStyle.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container-fluid">
+<a class="navbar-brand" href="index.html">CS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContenido">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=phishing">Phishing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=malware">Malware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=ransomware">Ransomware</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="amenazas.html?tema=ddos">DDoS</a>
+        </li>
+
+        <!-- Segundo dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Consejos de seguridad
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu2">
+            <li><a class="dropdown-item" href="consejos.html#buenas-practicas">Buenas Prácticas</a></li>
+            <li><a class="dropdown-item" href="consejos.html#test">Test de seguridad</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="consejos.html#contacto">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h2 class="text-center mt-5 mb-4">Amenazas</h2>
+
+
+
+
+<div class="container d-flex justify-content-center mt-5 mb-5">
+  <div id="carruselMini" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; width: 100%;">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active " id="tema1">
+        <img src="img/phishing.png" class="d-block w-100 rounded" alt="Phishing">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Phishing</h5>
+          <p>El phishing es un ataque que busca sustraer su dinero o su identidad, provocando que revele datos personales (como contraseñas o datos bancarios) en páginas que simulan ser legítimas.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="tema2">
+        <img src="img/malware.jpg" class="d-block w-100 rounded" alt="Malware">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Malware</h5>
+          <p>El malware es software dañino que permite a atacantes infiltrarse en sistemas, robar información o controlarlos sin permiso.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="tema3">
+        <img src="img/ransomeware.png" class="d-block w-100 rounded" alt="Ransomware">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Ransomware</h5>
+          <p>Es un tipo de malware que bloquea el acceso a archivos o sistemas y exige un rescate para desbloquearlos.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item" id="tema4">
+        <img src="img/DDoS.jpg" class="d-block w-100 rounded" alt="DDoS">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>Ataque DDoS</h5>
+          <p>Un ataque de denegación de servicio distribuido satura un servidor con tráfico malicioso para hacerlo inaccesible.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselMini" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselMini" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+.card {
+  border: 2px solid #ad72ff;
+  background-color: #ad72ff9a;
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #1a013d;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  padding-left: 1.25rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+
+#test {
+  height: 100px;
+  width: 500px;
+  background-color: #6706efde;
+}

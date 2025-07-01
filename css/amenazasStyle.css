@@ -1,0 +1,24 @@
+#carruselMini {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 5px solid #ad72ff9a;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(124, 19, 211, 0.3);
+  overflow: hidden;
+}
+
+#carruselMini img {
+  height: 400px; 
+  width: 700px;
+  object-fit: cover;
+}
+
+#carruselMini .carousel-caption {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+h2.text-center {
+  color: #240155;
+  font-weight: bold;
+}
